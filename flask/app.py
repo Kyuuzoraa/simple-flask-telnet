@@ -8,7 +8,7 @@ def index():
 
 @app.route('/swlab', methods=['POST'])
 def swlab():
-    subprocess.run(['python3', '/Users/LFR/Documents/python/flask/switch.py'])
+    subprocess.run(['python3', '/Users//flask/switch.py'])
     return 'Script has been executed successfully!'
 
 if __name__ == '__main__':
