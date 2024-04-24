@@ -9,7 +9,7 @@ async def shell(reader, writer,):
             ("password:", "admin"),
             ("SW-LAB-NA#",  "write"),
             ("SW-LAB-NA#",  "dir"),
-            ("SW-LAB-NA#",  "copy startup-config ftp 192.168.4.33"),
+            ("SW-LAB-NA#",  "copy startup-config ftp 192.168.0.0"),
             ("ftp user name[anonymous]?",  "admin"),
             ("ftp user password[anonymous]?",  "admin"),
             ("Destination file name[startup-config]?", "myfileflash"),
@@ -38,7 +38,7 @@ async def shell(reader, writer,):
     print()
 
 async def main():
-    reader, writer = await telnetlib3.open_connection('192.168.21.43', 23, shell=shell)
+    reader, writer = await telnetlib3.open_connection('192.168.0.0', 23, shell=shell)
     await writer.protocol.waiter_closed
 
 if __name__ == '__main__':
