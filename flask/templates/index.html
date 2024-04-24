@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GX-OLT</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 50%;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 1px;
+
+        }
+    </style>
+</head>
+<h1>
+    List device 
+</h1>
+<body> 
+    <table>
+        <tr>
+        <th>Device-Name</th>
+        <th>Action</th>
+        </tr>
+        <tr>
+        <td>SW-01-LAB</td>
+        <td>
+            <form action="/swlab" method="post">
+                <button type="submit">Run</button>
+            </form>
+        </td>
+        </tr>
+</body>
+</html>
